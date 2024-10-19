@@ -1,17 +1,20 @@
 :root {
-  /* --color: (#757575); */
-  --text-color: #212121;
+  --text-color: #757575;
+  --title-color: #212121;
   --highlight-color: #2196f3;
 }
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
-a {
-  text-decoration: none;
+/* a {
+  
+} */
+.list {
+  list-style: none;
 }
 
 h1,
@@ -20,7 +23,7 @@ h3,
 h4,
 h4,
 h5,
-h5 {
+h6 {
   font-family: Roboto;
 }
 
@@ -30,45 +33,58 @@ h5 {
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 30.52px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-decoration: none;
 }
 .logo-web {
   color: var(--highlight-color);
   margin-right: -6px;
 }
 .logo-studio {
-  color: var(--text-color);
+  color: var(--title-color);
 }
 /* Header links */
+/* .nav-list {
+  list-style: none;
+} */
 .nav-link {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16.41px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
   list-style: none;
   text-decoration: none;
-  color: var(--text-color);
+  color: #212121;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-link:hover,
+:focus,
+:active {
+  color: var(--highlight-color);
+}
+.current {
+  color: var(--highlight-color);
 }
 
 /* HERO */
 .hero-title {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 44px;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 1.4;
   letter-spacing: 0.06em;
   text-align: center;
 }
 /* Section */
 .title {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16.41px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--title-color);
