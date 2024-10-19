@@ -1,15 +1,75 @@
 :root {
-    --title-color:(#212121);
-    --main-text-color:(#757575);
-    --background-color:(#fff)
-    --highlight-color: (#2196F3);
+  /* --color: (#757575); */
+  --text-color: #212121;
+  --highlight-color: #2196f3;
 }
 body {
-  background-color: var(--background-color);
-  color: var(--title-color);
-  
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h5 {
+  font-family: Roboto;
+}
+
+/* Logo */
+.logo {
+  color: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30.52px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.logo-web {
+  color: var(--highlight-color);
+  margin-right: -6px;
+}
+.logo-studio {
+  color: var(--text-color);
+}
+/* Header links */
+.nav-link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* HERO */
+.hero-title {
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+/* Section */
 .title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: left;
   color: var(--title-color);
 }
