@@ -10,9 +10,6 @@ body {
   color: var(--title-color);
 }
 
-/* a {
-  
-} */
 .list {
   list-style: none;
 }
@@ -69,6 +66,28 @@ h6 {
 .current {
   color: var(--highlight-color);
 }
+.contact-list,
+.contact-mail,
+.contact-phone {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.contact-mail:hover,
+:focus,
+:active {
+  color: var(--highlight-color);
+}
+.contact-phone:hover,
+:focus,
+:active {
+  color: var(--highlight-color);
+}
 
 /* HERO */
 .hero-title {
@@ -78,9 +97,31 @@ h6 {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-align: center;
+  text-decoration: none;
+  color: var(--title-color);
 }
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--highlight-color);
+  border: #2196f3;
+  cursor: pointer;
+}
+.button:active,
+:hover,
+:focus {
+  background-color: #f5f4fa;
+  color: var(--title-color);
+}
+
 /* Section */
-.title {
+.section-title {
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -88,4 +129,53 @@ h6 {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--title-color);
+  list-style: none;
+}
+
+.section-text {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.our-team-title {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.our-team-text {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* FOOTER */
+.address {
+  font-style: normal;
+  background-color: #2f303a;
+  display: block;
+  font-style: inherit;
+}
+
+.logo-studio-footer {
+  color: #ffffff;
+}
+.address-street {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: solid;
 }
