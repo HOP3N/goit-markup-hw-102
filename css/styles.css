@@ -96,7 +96,6 @@ h6 {
   font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.06em;
-  text-align: center;
   text-decoration: none;
   color: var(--title-color);
 }
@@ -118,6 +117,42 @@ h6 {
 :focus {
   background-color: #f5f4fa;
   color: var(--title-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn-portfolio {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62px;
+  text-align: center;
+  width: auto;
+  height: 38px;
+  gap: 0px;
+  border: #757575;
+  border-radius: 4px;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.btn-portfolio:hover,
+:focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 /* Section */
@@ -148,6 +183,8 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
+  background-color: none;
 }
 
 .our-team-text {
@@ -160,15 +197,25 @@ h6 {
 }
 
 /* FOOTER */
-.address {
-  font-style: normal;
+.footer {
   background-color: #2f303a;
   display: block;
   font-style: inherit;
 }
-
+.logo-footer {
+  background-color: #2f303a;
+  text-decoration: none;
+  background-color: none;
+}
 .logo-studio-footer {
   color: #ffffff;
+  background-color: #2f303a;
+}
+.logo-web-footer {
+  background-color: #2f303a;
+}
+.address {
+  font-style: normal;
 }
 .address-street {
   font-family: Roboto;
@@ -177,5 +224,30 @@ h6 {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+  background-color: #2f303a;
   text-decoration: solid;
+}
+.contact-list-footer,
+.contact-mail-footer,
+.contact-phone-footer {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: #2f303a;
+}
+.contact-mail-footer:hover,
+:focus,
+:active {
+  color: var(--highlight-color);
+}
+.contact-phone-footer:hover,
+:focus,
+:active {
+  color: var(--highlight-color);
 }
